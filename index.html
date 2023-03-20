@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Práctica 1</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://www.dafontfree.net/embed/bWluaW9uLXByby1yZWd1bGFyJmRhdGEvNDYvbS82Mzk2MS9NaW5pb25Qcm8tUmVndWxhci5vdGY" rel="stylesheet" type="text/css"/>
+        <script src="js/libCapas2223.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="icon" type="image/svg" href="img/shop.svg" sizes="64x64">
+        <style>
+          @font-face {
+            font-family: 'Minion Pro Regular';
+            src: url('/fonts/Minion_Pro_Regular.ttf');
+          }
+  
+          @font-face {
+            font-family: 'HK Grotesk Thin';
+            src: url('/fonts/HKGrotesk-Light.otf');
+          }
+          
+          h1,h2,h3{
+              font-family: 'HK Grotesk Thin';
+          }
+  
+          * {
+          font-family: 'Minion Pro Regular';
+          }
+  
+          button {
+          font-family: 'Minion Pro Regular';
+          }
+        </style>
+    </head>
+    <body onload="Cargar('inicio.html','cuerpo')">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="container-fluid">
+          <a class="imagenlogo navbar-brand" onclick="Cargar('inicio.html','cuerpo')" href="#"></a>
+          <button id="click" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" onclick="Cargar('tienda.html','cuerpo')"  href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="Cargar('empresa.html','cuerpo')" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="Cargar('contacto.html','cuerpo')" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="Cargar('login.html','cuerpo')" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="Cargar('admin.html','cuerpo')" href="#">(Admin)</a>
+              </li>
+              <li class="nav-item">
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" onclick="Cargar('carrito.html','cuerpo')" type="submit">
+                      <i class="bi-cart-fill me-1"></i>
+                      Cart
+                      <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="sparador1 gjs-row">
+      </div>
+
+      <div id="cuerpo">
+        
+      </div>
+      
+      <footer class="footer mt-auto py-2 fixed-bottoms">
+        <div class="container text-center">
+          <span class="text-muted">Designed by <a href="#">Pablo García</a></span>
+        </div>
+      </footer>
+      
+
+        <script>
+          // Get the modal
+          var modal = document.getElementsByClassName('click');
+            
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
+        <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!--Para cargar los iconos-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

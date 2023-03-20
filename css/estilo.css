@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  max-height: 70px;
+}
+
+.container {
+    margin-top: 50px;
+  }
+
+.sparador1{
+  height:68px;
+}
+/* Apartado de Usuario*/
+#profilePic{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: 2px solid #555555;
+}
+
+/* Apartado de la tienda*/
+.card-img-top {
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
+
+  .card{
+    border: none;
+  }
+
+  .logo{
+    border-radius: 5%;
+  }
+  
+  .imagenlogo{
+      display: block; /* Asegura que el elemento <a> ocupe todo el espacio disponible en el navbar */
+      width: 300px; /* El ancho que quieras para el logo reducido */
+      height: 300px; /* La altura que quieras para el logo reducido */
+      background-image: url(/img/CamilleTextLogo_v.png); /* La ruta de la imagen del logo reducido */
+      background-size: contain; /* Ajusta el tamaño de la imagen para que encaje en el ancho y altura definidos */
+      background-repeat: no-repeat; /* Evita que la imagen se repita en caso de que sea más pequeña que el ancho y altura definidos */
+      background-position: center bottom; ; /* Alinea la imagen en el centro y abajo del elemento <a> */
+      margin-top: 120px;
+  }
+
+  /*Adjust card layout for small screens*/
+@media (max-width: 576px) {
+    .row {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .col-sm-4 {
+      flex-grow: 0;
+      flex-basis: calc(50% - 0.5rem);
+      max-width: calc(50% - 0.5rem);
+      margin-bottom: 1rem;
+    }
+  }
+
+  /* Cambiar la imagen del fondo cuando tiene una pantaña pequeña*/
+  @media (max-width: 992px) {
+    .imagenlogo{
+      margin-top: 0px;
+      height: 150px;
+      width: 150px;
+    }
+    .container-fluid{
+      height: 70px;
+    }
+    .sparador1{
+      height: 120px;
+    }
+    .bg-image {
+      background-image: url(/img/Manta_fondo.png);
+    }
+
+    #imagenFondo {
+      content: url('/img/Manta_fondo.png');
+    }
+    #navbarNav{
+      background-color: white;
+    }
+
+  }

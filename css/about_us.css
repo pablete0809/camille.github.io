@@ -1,0 +1,81 @@
+
+  .about{
+    margin: 0;
+  }
+  .gjs-row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+  }
+  .gjs-cell{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+  }
+
+  .celdaEmpresa{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-self:auto;
+    flex:0 1 100%;
+  }
+ 
+  .retrato{
+    width: 665px;
+    height:863px;
+  }
+  .aboutCamille{
+    text-align:left;
+    padding:0 0 0 30px;
+  }
+
+  .heading{
+    float:none;
+    text-align:center;
+    font-size:3rem;
+  }
+  .sectionEmpresa{
+    width:72vw;
+    text-align:left;
+  }
+  #i0bi{
+    color:black;
+    width:70vw;
+    height:0vh;
+  }
+  .contenedorEmpresa{
+    color:black;
+    width:690px;
+    height:900px;
+    padding-left: 15vw;
+  }
+  @media (max-width: 992px) {
+    /* Styles for screens smaller than 768px */
+    .gjs-row {
+      display: block;
+    }
+    .gjs-cell {
+      text-align: center;
+      display: block;
+    }
+    .aboutCamille {
+      margin-top: 20px;
+    }
+    .retrato{
+      width: 465px;
+      height:663px;
+    }
+  }
+  @media (max-width: 568px){
+    .gjs-row{
+      flex-wrap:wrap;
+    }
+    .retrato{
+      width: 365px;
+      height:563px;
+    }
+  }
+  

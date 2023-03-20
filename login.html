@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Empresa</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/libCapas2223.js"></script>
+    <link rel="icon" type="image/svg" href="img/shop.svg" sizes="64x64">
+    <style>
+        .card {
+  margin-top: 30px;
+  border: none;
+}
+
+.card-header {
+  border-radius: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-control:focus {
+  border-color: #38c172;
+  box-shadow: 0 0 0 0.2rem rgba(56, 193, 114, 0.25);
+}
+
+.btn-primary,
+.btn-success {
+  border-radius: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .card-body {
+    padding: 15px;
+  }
+  
+  .btn-primary,
+  .btn-success {
+    margin-top: 10px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="login-tab" data-toggle="tab" role="tablist" aria-controls="login" >Log In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="register-tab" data-toggle="tab" role="tablist" aria-controls="register" >Register</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                    <form>
+                      <div class="form-group">
+                        <label for="login-email">Email address</label>
+                        <input type="email" class="form-control" id="login-email" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" class="form-control" id="login-password" placeholder="Password">
+                      </div>
+                      <button type="submit" onclick="Cargar('usuario.html','cuerpo')" class="btn btn-primary">Log In</button>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                    <form>
+                      <div class="form-group">
+                        <label for="register-name">Name</label>
+                        <input type="text" class="form-control" id="register-name" placeholder="Enter name">
+                      </div>
+                      <div class="form-group">
+                        <label for="register-email">Email address</label>
+                        <input type="email" class="form-control" id="register-email" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" class="form-control" id="register-password" placeholder="Password">
+                      </div>
+                      <button type="submit" onclick="Cargar('usuario.html','cuerpo')" class="btn btn-primary">Register</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        $(document).ready(function(){
+          $('#register-tab').click(function(){
+            $('#login').removeClass('show active');
+            $('#register').addClass('show active');
+          });
+          $('#login-tab').click(function(){
+            $('#register').removeClass('show active');
+            $('#login').addClass('show active');
+          });
+        });
+      </script>
+      
+</body>
+</html>
